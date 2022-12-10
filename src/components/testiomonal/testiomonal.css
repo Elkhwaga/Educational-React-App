@@ -1,0 +1,72 @@
+/* -- Testiomonal Section
+ ---- ---- ---- ---- ----*/
+.testiomonal {
+  padding: 50px 0;
+}
+
+.testiomonal .row {
+  column-gap: 15px;
+}
+
+.testiomonal .col {
+  width: 33.33%;
+}
+
+.testiomonal .card {
+  background-color: var(--white-color);
+  padding: 25px 15px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
+    rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+  transition: 0.5s;
+}
+
+.testiomonal .card .card-header {
+  column-gap: 15px;
+  position: relative;
+}
+
+.testiomonal .card .image {
+  width: 25%;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 100px;
+}
+
+.testiomonal .card .info {
+  width: 75%;
+}
+
+.testiomonal .card .info p {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  color: var(--main-color);
+}
+
+.testiomonal .card .info span {
+  padding: 10px;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border-radius: 50%;
+  position: absolute;
+  left: 18%;
+  bottom: 0;
+}
+
+.testiomonal .card .card-body p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.testiomonal .card:hover {
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+.testiomonal .card:hover p {
+  color: var(--white-color);
+}
+.testiomonal .card:hover .info span {
+  color: var(--main-color);
+  background-color: var(--white-color);
+}

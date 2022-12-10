@@ -1,0 +1,69 @@
+/* -- Contact Section
+ ---- ---- ---- ---- ----*/
+.contact {
+  padding-top: 50px;
+}
+
+.contact iframe {
+  border: none;
+}
+
+.contact .col > p {
+  margin: 5px 0 20px;
+}
+
+.contact .col {
+  width: 50%;
+  padding: 20px;
+}
+
+.contact .items {
+  margin-bottom: 15px;
+}
+
+.contact .items .col {
+  width: 33.33%;
+  padding: 0;
+}
+
+.contact .items h5 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.contact .items p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.contact form {
+  margin-bottom: 15px;
+  row-gap: 15px;
+}
+
+.contact form > * {
+  width: 100%;
+}
+
+.contact form input,
+.contact form textarea {
+  padding: 8px;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  outline: 0;
+}
+
+.contact form input:foucs,
+.contact form textarea:foucs {
+  outline: 0;
+  box-shadow: none;
+}
+
+.contact form .btn {
+  padding: 15px 10px;
+  column-gap: 10px;
+}
+
+.contact h4 {
+  margin-bottom: 15px;
+}

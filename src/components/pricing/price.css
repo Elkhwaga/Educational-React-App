@@ -1,0 +1,113 @@
+/* -- Price Section
+ ---- ---- ---- ---- ----*/
+.price {
+	padding: 50px 0;
+}
+
+.price h2 {
+	font-size: 3rem;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.price .row {
+	column-gap: 15px;
+}
+
+/* -- Price Card Section
+ ---- ---- ---- ---- ----*/
+.price > .col {
+	width: 25%;
+	text-align: center;
+}
+
+.price .card {
+	padding: 35px 20px;
+	background-color: var(--white-color);
+	box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
+		rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+	transition: all 0.5s;
+	text-align: center;
+}
+
+.price .card:hover {
+	background-color: var(--main-color);
+	color: var(--white-color);
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.price .card:hover h3,
+.price .card:hover h3 span {
+	color: var(--white-color);
+}
+
+.price .card:hover .outline-primary {
+	border-color: var(--white-color);
+	color: var(--white-color);
+}
+
+.price .card .outline-primary:hover {
+	background-color: var(--white-color);
+	color: var(--main-color);
+}
+
+.price .card h5 {
+	font-weight: 800;
+	font-size: 1rem;
+}
+
+.price .card h3 {
+	font-size: 2.2rem;
+	color: var(--main-color);
+	margin: 25px 0;
+}
+
+.price .card h3 span {
+	color: var(--black-color);
+	font-size: 1rem;
+	margin-right: 5px;
+	font-weight: 900;
+}
+
+.price .card p {
+	font-size: 0.9rem;
+	font-weight: 400;
+	line-height: 1.7;
+	margin-bottom: 20px;
+}
+
+/* -- Faq Section
+ ---- ---- ---- ---- ----*/
+.faq {
+	padding: 50px 0;
+}
+
+.faq .box {
+	margin-bottom: 15px;
+}
+
+.faq .box .show {
+	padding: 15px;
+	background: var(--main-color);
+	cursor: pointer;
+	width: 100%;
+	border: 0;
+}
+
+.faq .box .show span {
+	color: var(--white-color);
+	font-size: 0.9rem;
+}
+
+.faq .box .text {
+	padding: 15px 10px;
+	border-top: 1px solid #fff;
+	background-color: var(--main-color);
+}
+
+.faq .box .text p {
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: var(--white-color);
+}

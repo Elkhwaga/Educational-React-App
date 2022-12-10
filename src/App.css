@@ -1,38 +1,231 @@
-.App {
+/* -- Global
+ ---- ---- ---- ---- ----*/
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  background: none;
+  border: 0;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn-primary {
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+
+.btn-light {
+  background-color: var(--white-color);
+  color: var(--main-color);
+}
+
+.outline-primary {
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  width: 100%;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.outline-primary:hover {
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.title {
+  margin: 20px 0;
+  font-size: 2.5rem;
+}
+
+.hero,
+.back {
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  padding: 30px 0;
+}
+
+.shadow-sm {
+  box-shadow: 0 25px 36px -11px rgb(0 0 0 / 9%);
+}
+
+.content-left,
+.content-right {
+  width: 50%;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+/* -- Helpers
+ ---- ---- ---- ---- ----*/
+.container {
+  width: 95%;
+  margin: auto;
+  position: relative;
+}
+
+.container-fluid {
+  width: 98%;
+  margin: auto;
+  position: relative;
+}
+
+/* ---- flex ---- */
+.d-flex {
+  display: flex !important;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* ---- align-items ---- */
+.align-items-center {
+  align-items: center !important;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+/* ---- justify-content ---- */
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.justify-space-between {
+  justify-content: space-between !important;
+}
+
+/* ---- Margin ---- */
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+/* ---- Padding ---- */
+.p-0 {
+  padding: 0 !important;
+}
+
+/* ---- Image ---- */
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.responsive {
+  width: 100%;
+  height: 100%;
+}
+
+/* ---- Text ---- */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-white {
+  color: var(--white-color);
+}
+
+/* ---- Height ---- */
+.h-100 {
+  height: 100%;
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+.vh-50 {
+  height: 50vh;
+}
+
+/* ---- Width ---- */
+.w-25 {
+  width: 25% !important;
+}
+
+.w-50 {
+  width: 50% !important;
+}
+
+.w-75 {
+  width: 75% !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+/* -- Back Section
+ ---- ---- ---- ---- ----*/
+.back {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.1)),
+    url('/public/images/back.webp');
+}
+
+.back p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.back h2 {
+  line-height: 0;
+  font-size: 6rem;
+  margin-top: 40px;
+}
+
+.back .content-right {
+  padding: 40px 20px;
+}
+
+/* -- Title
+ ---- ---- ---- ---- ----*/
+.subtitle {
+  color: var(--main-color);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  color: var(--black-color);
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contact .social,
+footer .social {
+  column-gap: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact .social span,
+footer .social span {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
 }

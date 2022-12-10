@@ -1,0 +1,44 @@
+/* -- Blog Section
+ ---- ---- ---- ---- ----*/
+.blog {
+  padding: 50px 0;
+}
+
+.blog .row {
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.blog .col {
+  width: 32.2%;
+}
+
+.blog .card {
+  background-color: var(--white-color);
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
+    rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+}
+
+.blog .card .card-body {
+  padding: 20px;
+}
+
+.blog .card .card-body .actions span {
+  font-size: 0.9rem;
+}
+
+.blog .card .card-body .actions .icon {
+  color: var(--main-color);
+  padding-right: 8px;
+  font-size: 1rem;
+}
+
+.blog .card .card-body .info h4 {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.blog .card .card-body .info p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}

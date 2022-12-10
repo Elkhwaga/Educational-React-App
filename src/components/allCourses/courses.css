@@ -1,0 +1,137 @@
+/* -- Courses Section
+ ---- ---- ---- ---- ----*/
+.courses-card {
+	padding: 30px 0;
+}
+
+.courses-card .row {
+	row-gap: 30px;
+	column-gap: 30px;
+}
+
+.courses-card .col {
+	width: 31.67%;
+	padding: 20px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.courses-card .card {
+	min-height: 360px;
+}
+
+.courses-card .card .info {
+	column-gap: 15px;
+}
+
+.courses-card .card .info .right {
+	width: 80%;
+	padding: 20px 0;
+}
+
+.courses-card .card .header {
+	min-height: 270px;
+}
+.courses-card .card .header .info .image {
+	width: 15%;
+	height: 60px;
+	padding: 15px;
+	background-color: var(--main-color);
+}
+
+.courses-card .card .info .image {
+	width: 20%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.courses-card .card .header .info h5 {
+	font-size: 0.9rem;
+	line-height: 1.4;
+}
+
+.courses-card .card .header .statrs {
+	gap: 10px;
+	color: var(--main-color);
+	margin: 20px 0;
+}
+
+.courses-card .card .card-body .info .image {
+	height: 60px;
+	padding: 0;
+}
+
+.courses-card .card .card-body .info h6 {
+	font-size: 0.9rem;
+	color: var(--black-color);
+}
+
+.courses-card .card .card-body .info p {
+	font-size: 0.9rem;
+	color: var(--main-color);
+	margin-top: 20px;
+}
+
+.courses-card .card .price {
+	color: var(--main-color);
+	text-align: center;
+	font-weight: 700;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+/* -- Online Courses
+ ---- ---- ---- ---- ----*/
+.online-courses {
+	padding: 30px 0;
+	text-align: center;
+}
+
+.online-courses .col {
+	width: 15.28%;
+	height: 200px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.online-courses .row {
+	row-gap: 20px;
+	column-gap: 20px;
+}
+
+.online-courses .content {
+	background-color: var(--white-color);
+	padding: 30px 20px;
+	height: 100%;
+	transition: all 0.3s;
+}
+
+.online-courses .content .image .image-hover {
+	display: none;
+}
+
+.online-courses .content:hover .image-hover {
+	display: inline;
+}
+
+.online-courses .content:hover .image-display {
+	display: none;
+}
+
+.online-courses .content:hover {
+	background-color: var(--main-color);
+	color: var(--white-color);
+	cursor: pointer;
+}
+
+.online-courses .content h5 {
+	font-size: 1rem;
+	margin: 10px 0;
+}
+
+.online-courses .content span {
+	font-size: 0.9rem;
+	color: var(--main-color);
+	font-weight: 500;
+	background-color: var(--white-color);
+	padding: 5px 10px;
+}

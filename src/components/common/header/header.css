@@ -1,0 +1,133 @@
+/* -- Header
+ ---- ---- ---- ---- ----*/
+header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+/* -- Head Section
+ ---- ---- ---- ---- ----*/
+header .head {
+	padding: 15px 0;
+}
+
+header .head .container {
+	padding: 0 30px;
+}
+
+header .head .logo {
+	color: var(--white-color);
+}
+
+header .head .social {
+	gap: 10px;
+	margin-left: auto;
+}
+
+header .head .social span {
+	color: var(--white-color);
+	background-color: transparent;
+
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	font-size: 1.3rem;
+	cursor: pointer;
+	transition: all 0.3s;
+
+	border: 1px solid var(--white-color);
+}
+
+header .head .social span:hover {
+	background: var(--main-color);
+	color: var(--white-color);
+	border-color: var(--main-color);
+}
+
+/* -- Nav
+ ---- ---- ---- ---- ----*/
+header nav {
+	background-color: var(--light-white-color);
+	box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+}
+
+header nav ul li {
+	padding: 30px 10px;
+}
+
+header nav ul li a {
+	color: var(--white-color);
+	font-weight: 500;
+	transition: 0.5s;
+}
+
+header nav ul li a:hover {
+	color: var(--main-color);
+}
+
+header nav .start {
+	background-color: var(--main-color);
+	padding: 30px 50px;
+	clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+	margin-left: auto;
+}
+
+header nav .toggle {
+	display: none;
+}
+
+header nav ul.nav-links {
+	display: flex;
+}
+
+@media screen and (max-width: 768px) {
+	header nav {
+		background-color: var(--main-color);
+		position: relative;
+	}
+
+	header nav ul.nav-links {
+		display: none;
+	}
+
+	header nav .start {
+		clip-path: none;
+		margin-left: 0 !important;
+	}
+
+	header nav ul.mobile-nav {
+		position: absolute;
+		top: 100%;
+		background: #000;
+		width: 100%;
+	}
+
+	header nav ul li {
+		padding: 15px 20px;
+	}
+
+	header nav .toggle {
+		display: block;
+		position: absolute;
+		right: 2%;
+		top: 50%;
+		border: 0;
+		background: none;
+		font-size: 1.5rem;
+		line-height: 0;
+		transform: translateY(-50%);
+		color: var(--white-color);
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	header nav ul li {
+		padding: 30px 20px;
+	}
+
+	header nav .start {
+		padding: 30px 70px;
+	}
+}
